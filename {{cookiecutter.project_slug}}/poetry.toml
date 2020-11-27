@@ -1,0 +1,8 @@
+[virtualenvs]
+in-project = true
+
+{%- if cookiecutter.use_github_actions_for_pypi_deployment %}
+[repositories]
+[repositories.testpypi]
+url = "https://test.pypi.org/legacy/"
+{%- endif %}
