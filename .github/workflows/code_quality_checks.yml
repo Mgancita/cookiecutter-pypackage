@@ -23,4 +23,4 @@ jobs:
       - name: Install dependencies
         run: poetry update
       - name: Check yaml style with yamllint
-        run: poetry run yamllint . -c yamllint-config.yaml
+        run: poetry run yamllint . -c yamllint-config.yml
