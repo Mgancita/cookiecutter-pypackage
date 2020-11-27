@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "cookiecutter-pypackage"
+version = "0.0.0"
+description = "Cookiecutter to create a Python package. Powered by Poetry, GitHub actions, and MkDocs-Material."
+authors = ["Marco Gancitano <marco.gancitano97@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+homepage = "https://github.com/mgancita/cookiecutter-pypackage"
+repository = "https://github.com/mgancita/cookiecutter-pypackage"
+keywords = ["cookiecutter", "packaging"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+cookiecutter = "^1.7.0"
+mkdocs-material = "^6.1.5"
+yamllint = "^1.25.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

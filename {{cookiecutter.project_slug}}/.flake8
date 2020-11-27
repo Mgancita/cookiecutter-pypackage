@@ -1,0 +1,20 @@
+# -------------------------------------------------------
+# Full list of errors & violation codes
+# -------------------------------------------------------
+
+[flake8]
+max-line-length = 100
+exclude =
+    .git,
+    docs,
+    node_modules
+    __pycache__,
+    build,
+    *.pyc,
+    *.egg-info,
+    .cache,
+    .eggs
+max-complexity = 10
+import-order-style = google
+application-import-names = {{ cookiecutter.project_slug }}
+format = ${cyan}%(path)s${reset}:${yellow_bold}%(row)d${reset}:${green_bold}%(col)d${reset}: ${red_bold}%(code)s${reset} %(text)s
