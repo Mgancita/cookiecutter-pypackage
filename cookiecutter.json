@@ -17,4 +17,8 @@
     "use_github_actions_for_pypi_deployment": "y",
     "create_author_file": "y",
     "open_source_license": ["MIT", "BSD-3-Clause", "ISC", "Apache-2.0", "GPL-3.0-only", "Not open source"],
-  }
+    "_copy_without_render": [
+        ".github/workflows/pypi_publish.yml",
+        ".github/workflows/test_pypi_publish.yml"
+    ]
+}
