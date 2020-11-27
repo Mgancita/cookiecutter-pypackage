@@ -44,7 +44,7 @@ include = [
     {%- if cookiecutter.open_source_license in license_classifiers %}
     "LICENSE",
     {%- endif %}
-    {%- if use_mypy %}
+    {%- if cookiecutter.use_mypy %}
     "{{ cookiecutter.project_slug }}/py.typed"
     {%- endif %}
 ]

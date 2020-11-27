@@ -26,25 +26,23 @@ jobs:
       - name: Unit & Coverage test with pytest
         run: poetry run pytest
       {%- endif %}
-      {% if cookiecutter.flake8 == 'y' -%}
+      {% if cookiecutter.use_flake8 == 'y' -%}
       - name: Check style with flake8
-        run: |
-          poetry run flake8 {{cookiecutter.project_slug}}/ tests/
+        run: poetry run flake8 {{cookiecutter.project_slug}}/ tests/
       {%- endif %}
       {% if cookiecutter.use_pylint == 'y' -%}
       - name: Check style with pylint
-        run: |
-          poetry run pylint {{cookiecutter.project_slug}}/ tests/
+        run: poetry run pylint {{cookiecutter.project_slug}}/ tests/
       {%- endif %}
       {% if cookiecutter.use_black == 'y' -%}
       - name: Check format with black
         run: poetry run black --check {{cookiecutter.project_slug}}/ tests/
       {%- endif %}
-      {% if cookiecutter.use_black == 'y' -%}
+      {% if cookiecutter.use_mypy == 'y' -%}
       - name: Check type hinting with mypy
         run: poetry run mypy --strict --config-file=mypy.ini {{cookiecutter.project_slug}}/
       {%- endif %}
-      {% if cookiecutter.use_black == 'y' -%}
+      {% if cookiecutter.use_yamllint == 'y' -%}
       - name: Check yaml style with yamllint
         run: poetry run yamllint . -c yamllint-config.yml
       {%- endif %}

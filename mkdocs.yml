@@ -1,0 +1,39 @@
+---
+# Project Information
+site_name: Cookiecutter PyPackage
+site_author: Marco Gancitano
+site_description: >-
+    Cookiecutter to create a Python package. Powered by Poetry,
+    GitHub actions, and MkDocs-Material.
+
+# Repository information
+repo_name: mgancita/cookiecutter-pypackage
+repo_url: https://github.com/mgancita/cookiecutter-pypackage
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2020 Marco Gancitano
+
+# Configuration
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tabs
+  language: en
+
+# Footer
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mgancita
+      name: mgancita on GitHub
+    - icon: fontawesome/brands/kaggle
+      link: https://kaggle.com/mgancita
+      name: mgancita on Kaggle
+
+# Page tree
+nav:
+  - Home: index.md
