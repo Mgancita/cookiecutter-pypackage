@@ -1,0 +1,17 @@
+{
+    "full_name": "Marco Gancitano",
+    "email": "marco.gancitano@example.com",
+    "github_username": "mgancita",
+    "project_name": "Python Boilerplate",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    "pypi_username": "{{ cookiecutter.github_username }}",
+    "use_pytest": "y",
+    "use_flake8": "y",
+    "use_pylint": "y",
+    "use_black": "y",
+    "use_mypy": "y",
+    "use_pypi_deployment_with_github_actions": "y",
+    "create_author_file": "y",
+    "open_source_license": ["MIT", "BSD-3-Clause", "ISC", "Apache-2.0", "GPL-3.0-only", "Not open source"],
+  }
