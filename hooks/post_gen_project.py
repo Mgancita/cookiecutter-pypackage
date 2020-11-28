@@ -5,18 +5,19 @@ import os
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
 
-def remove_file(filepath):
+def remove_file(filepath: str) -> None:
+    """Remove file at given filepath."""
     os.remove(os.path.join(PROJECT_DIRECTORY, filepath))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # AUTHORS
-    if '{{ cookiecutter.create_author_file }}' != 'y':
-        remove_file('AUTHORS.rst')
+    if "{{ cookiecutter.create_author_file }}" != "y":
+        remove_file("AUTHORS.md")
 
     # LICENSE
-    if '{{ cookiecutter.open_source_license }}' == 'Not open source':
-        remove_file('LICENSE')
+    if "{{ cookiecutter.open_source_license }}" == "Not open source":
+        remove_file("LICENSE")
 
     # GitHub Actions
     if "{{ cookiecutter.use_github_actions_for_ci }}" != "y":
@@ -38,4 +39,3 @@ if __name__ == '__main__':
 
     if "{{ cookiecutter.use_yamllint }}" != "y":
         remove_file("yamllint-config.yml")
-
