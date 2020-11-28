@@ -22,3 +22,13 @@ jobs:
         run: pip install poetry
       - name: Install dependencies
         run: poetry update
+      - name: Unit & Coverage test with pytest
+        run: poetry run pytest
+      - name: Check style with flake8 & pylint
+        run: |
+          poetry run flake8 hooks/ tests/
+          poetry run pylint hooks/
+      - name: Check format with black
+        run: poetry run black --check hooks/ tests/
+      - name: Check type hinting with mypy
+        run: poetry run mypy --config-file=mypy.ini hooks/
