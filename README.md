@@ -1,5 +1,9 @@
 # Cookiecutter PyPackage
 
+![Code Quality Checks](https://github.com/mgancita/cookiecutter-pypackage/workflows/Code%20Quality%20Checks/badge.svg)
+![Docs Publish](https://github.com/mgancita/cookiecutter-pypackage/workflows/Docs%20publish/badge.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for a Python package. Powered by Poetry, GitHub actions, and MkDocs-Material.
 
 ## Features
