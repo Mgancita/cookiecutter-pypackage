@@ -50,7 +50,7 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "3.7"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 cookiecutter = "^1.7.0"
