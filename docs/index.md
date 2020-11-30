@@ -16,4 +16,4 @@ This template has the following features:
   - [`GitHub Actions`](https://github.com/features/actions): Automated CI checks, auto-release to PyPi, and automated version bumping (no more Travis needed)  
   - [`MkDocs-Material`](https://github.com/squidfunk/mkdocs-material): Auto-publish documentation to it's own webpage  
 
-This is a simple list, for a deep-dive into why and how each feature is used visit [feature explanation](advanced/feature_explanation). If already familiar or just not interested, continue to [Getting started](/getting-started/create_local_project).
+This is a simple list, for a deep-dive into why and how each feature is used visit [feature explanation](advanced/feature_explanation). If already familiar or just not interested, continue to [Getting started](getting-started/create_local_project).
