@@ -36,4 +36,13 @@ extra:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home:
+    - Introduction: index.md
+  - Getting started:
+    - Create local project: getting-started/create_local_project.md
+    - Connect to remote repository: getting-started/connect_to_remote_repo.md
+    - Configure GitHub repository: getting-started/configure_github_repo.md
+    - Publish to test PyPI: getting-started/publish_to_test_pypi.md
+    - Publish to PyPI: getting-started/publish_to_pypi.md
+  - Advanced:
+    - Feature explanation: advanced/feature_explanation.md
