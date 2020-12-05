@@ -15,7 +15,7 @@
 
 {% if is_open_source %}
 - Free software: {{ cookiecutter.open_source_license }}
-- Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
+- Documentation: https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_slug | replace("_", "-") }}.
 {% endif %}
 
 ## Features
@@ -25,4 +25,4 @@
 ## Credits
 
 
-This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [`mgancita/cookiecutter-pypackage`](https://github.com/mgancita/cookiecutter-pypackage) project template.
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [`mgancita/cookiecutter-pypackage`](https://mgancita.github.io/cookiecutter-pypackage/) project template.
