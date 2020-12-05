@@ -23,7 +23,7 @@ msg-template="{msg_id}:{line:3d},{column}: {obj}: {msg}"
 [tool.poetry]
 name = "{{ cookiecutter.project_slug }}"
 version = "0.0.0"
-homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug.replace('_', '-') }}"
 description = "{{ cookiecutter.project_short_description }}"
 authors = ["{{ cookiecutter.full_name.replace('\"', '\\\"') }} <{{ cookiecutter.email }}>"]
 readme = "README.md"
