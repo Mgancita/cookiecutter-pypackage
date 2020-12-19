@@ -6,7 +6,13 @@ First, move into the directory of the project.
 
 ` $ cd project-name/`
 
-Then, initialize the repo.  
+Then, setup poetry dependency manager,  
+
+` $ pip install poetry && poetry install`
+
+*For more info on poetry, check out their [docs](https://python-poetry.org/).*  
+
+Lastly, initialize the repo.  
 
 ` $ git init`  
 
@@ -39,15 +45,15 @@ Next, commit those changes:
 
 `$ git commit -m "Initialize repo"`
 
-Then, we name the current branch (with the files) to *master*:  
+Then, we name the current branch (with the files) to *main*:  
 
-`$ git branch -M master`
+`$ git branch -M main`
 
-**Note if `master` is not used. You must change the branch reference in certain files within the '.github/workflows' directory for CI checks to work.**
+**Note if `main` is not used. You must change the branch reference in certain files within the '.github/workflows' directory for CI checks to work.**
 
 Finally, lets push it to GitHub:  
 
-`$ git push -u origin master`
+`$ git push -u origin main`
 
 That's it! Now you should see your GitHub repository with all the starter files. 
 

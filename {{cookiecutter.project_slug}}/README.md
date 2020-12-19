@@ -1,12 +1,12 @@
 {% set is_open_source = cookiecutter.open_source_license != 'Not open source' -%}
+{% set project_github_link = cookiecutter.project_slug | replace("_", "-") -%}
 # {{ cookiecutter.project_name }}
 
 {% if is_open_source %}
-[![PyPI version](https://badge.fury.io/py/{{ cookiecutter.project_slug }}.svg)](https://badge.fury.io/py/{{ cookiecutter.project_slug }})
-![versions](https://img.shields.io/pypi/pyversions/{{ cookiecutter.project_slug }}.svg)
-[![GitHub license](https://img.shields.io/github/license/mgancita/{{ cookiecutter.project_slug }}.svg)](https://github.com/mgancita/{{ cookiecutter.project_slug }}/blob/master/LICENSE)
+[![PyPI version](https://badge.fury.io/py/{{ project_github_link }}.svg)](https://badge.fury.io/py/{{ project_github_link }})
+![versions](https://img.shields.io/pypi/pyversions/{{ project_github_link }}.svg)
+[![GitHub license](https://img.shields.io/github/license/mgancita/{{ project_github_link }}.svg)](https://github.com/mgancita/{{ project_github_link }}/blob/main/LICENSE)
 {% endif %}
-
 {% if cookiecutter.use_black %}
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 {% endif %}
@@ -15,7 +15,7 @@
 
 {% if is_open_source %}
 - Free software: {{ cookiecutter.open_source_license }}
-- Documentation: https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_slug | replace("_", "-") }}.
+- Documentation: https://{{ cookiecutter.github_username }}.github.io/{{ project_github_link }}.
 {% endif %}
 
 ## Features

@@ -5,6 +5,9 @@
 ## Introduction
 Welcome to cookiecutter-pypackage! The creation of this project was inspired by the want for an easy-to-configure repository setup where everything could be done within GitHub. In the current state, the repositories created from the cookiecutter uses only GitHub for continuous integration and continuous deployment (CI/CD) via GitHub Actions. This allows for developers to create, test, and deploy their package(s) in an easy-to-use and easy-to-maintain way. 
 
+## File structure
+All code developed should go within the directory with your project-name given. The packaging works with a single file of code or multiple modules nested within sub-directories. For an example of structuring that allows for easy imports, check out my [bowline](https://github.com/Mgancita/bowline) package.
+
 ## Features
 This template has the following features:  
 
