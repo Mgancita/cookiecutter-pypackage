@@ -1,15 +1,15 @@
 # Configure GitHub repository
 
 ## Setup branches
-Now that we've pushed our repository to GitHub we'll see a `master` branch with all the code but you rarely want to push code directly to master. To mitigate this, lets create a `development` branch for which to actively develop code and then move it to master once we think it's safe for production. To do so, simply: 
+Now that we've pushed our repository to GitHub we'll see a `main` branch with all the code but you rarely want to push code directly to main. To mitigate this, lets create a `development` branch for which to actively develop code and then move it to main once we think it's safe for production. To do so, simply: 
 
-1. Click on the "master" dropdown button your repo's homepage
+1. Click on the "main" dropdown button your repo's homepage
 2. Type in "development" in the search bar
-3. Select "Create branch: development from master".
+3. Select "Create branch: development from main".
 
 **Note if 'development' is not used. You must change the branch reference in certain files within the '.github/workflows' directory for CI checks to work.**
 
-As seen with master, you'll see Actions being run for development. Additionally, whenever you open a pull request (PR) from development to master, the checks will automatically run to make sure the code is safe for merging.
+As seen with main, you'll see Actions being run for development. Additionally, whenever you open a pull request (PR) from development to main, the checks will automatically run to make sure the code is safe for merging.
 
 That is the base needed for the CI system to work. If you wish to add further protection to your repository visit the `Settings -> Branches` section of your repo. This will allow you to add things like not allow code into a certain branch until it passes all CI checks and/or has been approved by at least 1 admin/contributer.
 
