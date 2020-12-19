@@ -4,7 +4,7 @@
 {% if is_open_source %}
 [![PyPI version](https://badge.fury.io/py/{{ cookiecutter.project_slug }}.svg)](https://badge.fury.io/py/{{ cookiecutter.project_slug }})
 ![versions](https://img.shields.io/pypi/pyversions/{{ cookiecutter.project_slug }}.svg)
-[![GitHub license](https://img.shields.io/github/license/mgancita/{{ cookiecutter.project_slug }}.svg)](https://github.com/mgancita/{{ cookiecutter.project_slug }}/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/mgancita/{{ cookiecutter.project_slug }}.svg)](https://github.com/mgancita/{{ cookiecutter.project_slug }}/blob/main/LICENSE)
 {% endif %}
 
 {% if cookiecutter.use_black %}
