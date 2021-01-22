@@ -48,7 +48,6 @@ pytest-cov = "^2.10.1"{% endif %}
 flake8 = "^3.8.4"
 flake8-docstrings = "1.5.0"
 flake8-import-order = "0.18.1"
-pep8-naming = "0.11.0"
 flake8-colors = "0.1.6"{% endif %}
 {% if cookiecutter.use_pylint == 'y' -%}
 pylint = "^2.6.0"{% endif %}
