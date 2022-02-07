@@ -39,15 +39,8 @@ pyflakes = "2.2.0"
 pep8 = "1.7.1"
 mypy = "0.790"
 black = "20.8b1"
-pylint = "^2.6.0"
 cookiecutter = "^1.7.0"
 mkdocs-material = "^6.1.5"
-
-[tool.pylint.reports]
-output-format="colorized"
-reports="y"
-include-ids="yes"
-msg-template="{msg_id}:{line:3d},{column}: {obj}: {msg}"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
