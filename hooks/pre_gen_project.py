@@ -9,8 +9,8 @@ MODULE_NAME = "{{ cookiecutter.project_slug}}"
 
 if not re.match(MODULE_REGEX, MODULE_NAME):
     print(
-        "ERROR: The project slug (%s) is not a valid Python module name. Please do not use a - "
-        "and use _ instead" % MODULE_NAME
+        f"ERROR: The project slug ({MODULE_NAME}) is not a valid Python module name. "
+        f"Please do not use a - and use _ instead"
     )
 
     # Exit to cancel project
