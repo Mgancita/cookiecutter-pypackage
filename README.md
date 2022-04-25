@@ -26,3 +26,6 @@ Generate a Python package project:
 
 `$ cookiecutter https://github.com/mgancita/cookiecutter-pypackage.git`
 
+## Docs
+
+Further Information about how to use this template could be found in the [official documentation](https://mgancita.github.io/cookiecutter-pypackage/)
