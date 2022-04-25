@@ -3,8 +3,10 @@
 ## Differences in the process
 Now that we've published to test pypi. PyPI should be cake! Instead of re-writing the process with a few tweaks I'll mention the main differences here for getting to PyPI.
 
-1. Visit [PyPI](https://www.pypi.org) (not test pypi) to create an account
-2. Set the given username and password as `PYPI_USERNAME` and `PYPI_PASSWORD`.
+1. Visit [PyPI](https://www.pypi.org) (not test pypi) to create an account.
+2. Go to the `API tokens` section with [Account Settings](https://pypi.org/manage/account/).
+3. Generate a new API token and set it as `PYPI_TOKEN`.
+    - Note that it should have a prefix of `pypi-` before a long token of characters.
 3. For release: 
     - Select `main branch`, 
     - Set tag version to `0.1.0`, 

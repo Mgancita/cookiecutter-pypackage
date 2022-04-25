@@ -11,12 +11,12 @@ With this being said, we'll have to create a pypi and test pypi account and conf
 **Note the current release process uses username and password while token api key is recommended. I've been having issues getting tokens to work with poetry but it's a main priority to shift to a better system.**
 
 ## Create test PyPI account
-Before we're able to start publishing packages, we'll have to setup accounts. Visit [test pypi](https://test.pypi.org) and sign-up for an account. Remember your username and password as it'll be needed later on.
+Before we're able to start publishing packages, we'll have to setup accounts. Visit [test pypi](https://test.pypi.org) and sign-up for an account.
 
 ## Setup repository secrets for test PyPI
 Github Secrets is an amazing tools in which you can inject secret variables into your Github Actions without them being visible to the public, which is especially important for open-source projects. The cookiecutter's out-of-the-box continous deployment process to publish to test pypi looks for a few secret variables so we'll set those here.
 
-Navigate to the `Settings -> Secrets` section of your repository and add the secrets `TEST_PYPI_USERNAME` and `TEST_PYPI_PASSWORD`. **If you use other variable names, you'll have to change the secret references in `.github/workflows/test_pypi_publish.yml`.**
+Navigate to the `API tokens` section of your [Account Settings](https://test.pypi.org/manage/account/) and generate a token. This token should start with `pypi-` and be followed by a long sequence of characters and numbers. Add that token as a secret called `TEST_PYPI_TOKEN` in your repositories secrets. **If you use other variable names, you'll have to change the secret references in `.github/workflows/test_pypi_publish.yml`.**
 
 ## Create release candidate
 The time has come. These are the steps needed to publish to test pypi:
