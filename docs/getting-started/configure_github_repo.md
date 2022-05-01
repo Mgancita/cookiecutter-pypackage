@@ -26,3 +26,6 @@ To publish the docs to your own github site do the following:
 Scroll back down to "GitHub Pages" and a link should be given for where your docs will be published (wait a few minutes for publication). In addition, this link can be added in the `About` section of your repository under "website" to display the link in a nice area.
 
 Now your repository has been properly configured! With proper code quality checks and automatically publishing documentation, you're just one more step away to having the infrastructure to develop an open-source Python package.
+
+### Configuration of documentation
+With the Basic configuration only the index.md is proparly published. The subpages are already builded and also reachable, but you need to link manual against them. To achieve a navigation like the pages your a reading at the moment, compare the [mkdocs.yml](../../mkdocs.yml) of this repo or even better read the [MkDocs official documentation](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/) about this topic.
