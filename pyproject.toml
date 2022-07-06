@@ -34,8 +34,8 @@ flake8 = "^4.0.0"
 flake8-docstrings = "1.6.0"
 flake8-import-order = "0.18.1"
 flake8-colors = "0.1.8"
-black = "22.3.0"
 mypy = "0.960"
+black = "22.3.0"
 mkdocs-material = "^6.1.5"
 
 [build-system]
