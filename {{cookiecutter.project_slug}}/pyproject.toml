@@ -45,16 +45,16 @@ mkdocs-material = "^6.1.5"{% endif %}
 pytest = "^6.0"
 pytest-cov = "^2.10.1"{% endif %}
 {% if cookiecutter.use_flake8 == 'y' -%}
-flake8 = "^3.8.4"
-flake8-docstrings = "1.5.0"
+flake8 = "^4.0.0"
+flake8-docstrings = "1.6.0"
 flake8-import-order = "0.18.1"
-flake8-colors = "0.1.6"{% endif %}
+flake8-colors = "0.1.8"{% endif %}
 {% if cookiecutter.use_pylint == 'y' -%}
 pylint = "^2.6.0"{% endif %}
 {% if cookiecutter.use_black == 'y' -%}
-black = "20.8b1"{% endif %}
+black = "22.3.0"{% endif %}
 {% if cookiecutter.use_mypy == 'y' -%}
-mypy = "0.790"{% endif %}
+mypy = "0.960"{% endif %}
 {% if cookiecutter.use_yamllint == "y" -%}
 yamllint = "^1.25.0"{% endif %}
 

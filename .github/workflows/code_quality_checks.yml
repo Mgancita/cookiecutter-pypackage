@@ -25,8 +25,7 @@ jobs:
       - name: Unit test with pytest
         run: poetry run pytest
       - name: Check style with flake8 & pylint
-        run: |
-          poetry run flake8 hooks/ tests/
+        run: poetry run flake8 hooks/ tests/
       - name: Check format with black
         run: poetry run black --check hooks/ tests/
       - name: Check type hinting with mypy
