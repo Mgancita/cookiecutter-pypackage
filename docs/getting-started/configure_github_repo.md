@@ -27,5 +27,6 @@ Scroll back down to "GitHub Pages" and a link should be given for where your doc
 
 Now your repository has been properly configured! With proper code quality checks and automatically publishing documentation, you're just one more step away to having the infrastructure to develop an open-source Python package.
 
-### Configuration of documentation
-With the Basic configuration only the index.md is proparly published. The subpages are already builded and also reachable, but you need to link manual against them. To achieve a navigation like the pages your a reading at the moment, compare the [mkdocs.yml](../../mkdocs.yml) of this repo or even better read the [MkDocs official documentation](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/) about this topic.
+### Setting up the Navigation system
+
+Because the docs only start with an `index.md` file, there's no need / way to setup a more complete navigation system (otherwise known as the page tree). To set this up, reference the [nav](https://github.com/Mgancita/cookiecutter-pypackage/blob/20a254618f08d82b7dc7120da66ccbe896abb8c3/mkdocs.yml#L38) section of this cookiecutter's `mkdocs.yml` file. Note that each highest level list item becomes part of the top nav and then all nested items are shown within each section.
