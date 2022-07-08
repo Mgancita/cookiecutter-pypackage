@@ -26,3 +26,7 @@ To publish the docs to your own github site do the following:
 Scroll back down to "GitHub Pages" and a link should be given for where your docs will be published (wait a few minutes for publication). In addition, this link can be added in the `About` section of your repository under "website" to display the link in a nice area.
 
 Now your repository has been properly configured! With proper code quality checks and automatically publishing documentation, you're just one more step away to having the infrastructure to develop an open-source Python package.
+
+### Setting up the Navigation system
+
+Because the docs only start with an `index.md` file, there's no need / way to setup a more complete navigation system (otherwise known as the page tree). To set this up, reference the [nav](https://github.com/Mgancita/cookiecutter-pypackage/blob/20a254618f08d82b7dc7120da66ccbe896abb8c3/mkdocs.yml#L38) section of this cookiecutter's `mkdocs.yml` file. Note that each highest level list item becomes part of the top nav and then all nested items are shown within each section.
