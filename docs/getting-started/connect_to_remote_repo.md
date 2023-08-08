@@ -26,6 +26,11 @@ If it hasn't already been created, we'll have to create a remote repository on G
   3. Make your choice of Public or Private.
   4. Leave all other boxes unchecked.
 
+## Activate write access for github action runner
+The default access rule of a fresh repository is set to "Read repository contents and package permissions". This will prevent the creation of github-pages.
+To allow the runner to create pages, the "Workflow permissions" need to be set to "Read and write permissions".
+Additionally, the checkbox "Allow GitHub Actions to create and approve pull requests" might be activated.
+
 ## Sync local repository with GitHub
 ### Add remote link
 Let's start with adding the newly created remote repository to the local repostiory so it knows where to push changes to. To do so run:  
