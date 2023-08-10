@@ -67,7 +67,6 @@ line-length=100
 [tool.pylint.reports]
 output-format="colorized"
 reports="y"
-include-ids="yes"
 msg-template="{msg_id}:{line:3d},{column}: {obj}: {msg}"
 {%- endif %}
 {%- if cookiecutter.use_pytest %}
